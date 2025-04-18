@@ -33,7 +33,7 @@ function App() {
         </nav>
 
         {/* Page Content */}
-        <main className="container mx-auto p-4">
+        <main className="container-fluid mx-auto p-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
