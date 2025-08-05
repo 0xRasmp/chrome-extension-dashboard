@@ -35,7 +35,7 @@ export default function Dashboard() {
         <div className="absolute top-40 left-40 w-80 h-80 bg-pink-600/10 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
       </div>
 
-      {/* Header */}
+      {/* Header.. */}
       <header className="relative bg-gray-800/50 backdrop-blur-xl border-b border-gray-700/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
