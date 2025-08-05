@@ -3,25 +3,20 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import "./App.css"
-import Header from "./components/Header"
-import Home from "./pages/home/index"
-import About from "./pages/about/index"
-import Contact from "./pages/contact/index"
+import Login from "./pages/login/index"
+import Signup from "./pages/signup/index"
+import Dashboard from "./pages/dashboard/index"
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen">
-        <Header />
-
-        {/* Page Content */}
-        <main className="container-fluid mx-auto p-4">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
+      <div className="min-h-screen bg-gray-900">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
       </div>
     </Router>
   )
